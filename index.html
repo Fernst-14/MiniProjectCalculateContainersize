@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Cal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="master-data">
+        <h1>Product Master</h1>
+         <table>
+      <thead>
+        <tr>
+          <th>Product No</th>
+          <th>Standard/ตู้</th>
+          <th>Start Max</th>
+        </tr>
+      </thead>
+      <tbody id="productMaster"></tbody>
+    </table>
+    </div>
+
+    <br>
+    <hr>
+
+    <h1>Container Cal</h1>
+    <div class="form-row">
+      <select id="productNo">
+        <option value="A1001">A1001</option>
+        <option value="A1002">A1002</option>
+        <option value="A2001">A2001</option>
+        <option value="A2002">A2002</option>
+      </select>
+
+      <label class="label">Order:</label>
+      <input type="number" id="orderQty" value="800">
+
+      <button onclick="calContainer()">Send</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Containers</th>
+          <th>Number/Containers</th>
+          <th>Product</th>
+          <th>Standard</th>
+        </tr>
+      </thead>
+      <tbody id="result"></tbody>
+    </table>
+
+    <p id="summary"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
